@@ -1,0 +1,174 @@
+/* this applies to the whole page */
+
+* {
+    margin: 0;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/* header of the home page */
+
+header {
+    background-color: gray;
+    padding: 20px;
+    color: rgb(2, 255, 183);
+}
+
+
+/* h1 in the header section */
+
+h1 {
+    justify-items: flex-start;
+    top: -60px;
+}
+
+
+/* the navigation on the header */
+
+.nav1 a {
+    color: rgb(2, 255, 183);
+    text-align: end;
+    padding-inline-end: 20px;
+    text-align: end;
+    float: right;
+    left: 70%;
+    top: 5%;
+}
+
+
+/* nav1 hover */
+
+.nav1 a:hover {
+    color: rgb(3, 255, 24);
+}
+
+
+/* the second navigation on the header */
+
+.nav2 a {
+    color: rgb(2, 255, 183);
+    text-align: end;
+    padding-inline-end: 20px;
+    text-align: end;
+    float: right;
+    left: 70%;
+    top: 5%;
+}
+
+
+/* list in the nav 2 */
+
+.nav2 ul {
+    list-style: none;
+    display: inline-flex;
+    float: right;
+}
+
+
+/* hover on the second navigation on the hover */
+
+.nav2 a:hover {
+    color: rgb(3, 255, 24);
+}
+
+
+/* the search box */
+
+.search-box {
+    position: absolute;
+    top: 12%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-box:hover>.search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover>.search-btn {
+    background: white;
+}
+
+
+/* search button */
+
+.search-btn {
+    color: black;
+    float: right;
+    width: 50px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background: #2f3640;
+}
+
+
+/* the section */
+
+section {
+    background-image: url(./destiny-5120x2880-4k-5k-469\(3\).jpg);
+    color: khaki;
+}
+
+
+/* search text */
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.2s;
+    line-height: 30px;
+    width: 0px;
+}
+
+
+/* the drop downs are here */
+
+.commercial {
+    display: none;
+}
+
+.nav2 ul li:hover .commercial {
+    display: block;
+    position: relative;
+    background: black;
+    margin-top: 15px;
+    background-color: black;
+    margin-left: -15px;
+    float: left;
+}
+
+.nav2 ul li:hover .commercial ul {
+    display: inline-table;
+    margin: 10px;
+}
+
+.nav2 ul li:hover .commercial ul li {
+    width: 200;
+    padding: 10px;
+    background: transparent;
+    text-align: right;
+}
+
+.nav2 ul li:hover .commercial ul li a:hover {
+    color: tomato;
+}
+
+.commercial ul li img {
+    height: 100px;
+    width: 100px;
+}
