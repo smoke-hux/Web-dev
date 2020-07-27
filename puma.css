@@ -117,6 +117,17 @@ h1 {
 section {
     background-image: url(./destiny-5120x2880-4k-5k-469\(3\).jpg);
     color: khaki;
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+
+
+/* cls */
+
+.cls {
+    clear: both;
 }
 
 
@@ -171,4 +182,194 @@ section {
 .commercial ul li img {
     height: 100px;
     width: 100px;
+}
+
+
+/* Slide Show are from here */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & Previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* position the next button to the right */
+
+.prev {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* hover for both the buttons , add a black color with a little bit of see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    margin: 0 2px;
+    background-color: #e70a0a;
+    border-radius: 50px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fade animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+
+/* row */
+
+.sech {
+    letter-spacing: .6px;
+    line-height: 28px;
+}
+
+.row {
+    background-color: #000000;
+    padding-top: 44px;
+    padding-bottom: 55px;
+}
+
+*,
+::before,
+::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sech a {
+    text-decoration: none;
+    letter-spacing: .6px;
+    color: #2997FF;
+}
+
+.sech {
+    padding: 0 15px 0 15px;
+    width: 30.3%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+/* footer */
+
+.nav12 {
+    padding: 22px;
+    margin-left: 22px;
+    float: right;
+}
+
+.nav12 a {
+    padding: 0px 12px;
+}
+
+.nav12 a:hover {
+    cursor: pointer;
+    color: rgb(0, 26, 255);
+}
+
+.nav12 a:active {
+    color: #e70a0a;
 }
